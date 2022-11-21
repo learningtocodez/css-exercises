@@ -24,8 +24,8 @@ body {
 
 .footer {
   display: flex;
-  justify-content: center;
   align-items: center; /* this centers (the odin project) footer.*/
+  justify-content: center;
   height: 72px;
   background: #eee;
   color: darkmagenta;
@@ -34,19 +34,21 @@ body {
 .sidebar {
   width: 300px;
   background: royalblue;
-  flex-shrink: 0;
+  flex-shrink: 0; /*Add when you don't want flexbox to shrink*/
   padding: 16px;
 }
 
 .card {
   padding: 16px;
   margin: 16px;
+  width: 300px; /* This gives the cards there final shape, without it cards are vertical.*/
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
 
 .container {
+  flex-direction: column column-reverse;
   padding: 32px;
   display: flex;
   flex-wrap: wrap;
