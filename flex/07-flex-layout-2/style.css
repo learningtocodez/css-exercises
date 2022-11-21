@@ -48,7 +48,6 @@ body {
 }
 
 .container {
-  flex-direction: column column-reverse;
   padding: 32px;
   display: flex;
   flex-wrap: wrap;
